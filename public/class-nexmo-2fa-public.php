@@ -41,7 +41,7 @@ final class Nexmo_2FA_Public extends Nexmo_2FA {
 				$errors = array( $response->error_text );
 			}
 
-			$this->start_2FA( $_user, $redirect_to, $remember_me, $phone_number, $country_code, $errors );
+			$this->start_2FA( $_user, $redirect_to, $remember_me, $errors );
 		}
 
 		if ( is_null( $user ) ) {
@@ -52,13 +52,13 @@ final class Nexmo_2FA_Public extends Nexmo_2FA {
 		}
 
 		if ( is_a( $user, 'WP_User' ) ) {
-			$this->start_2FA( $user, $redirect_to, $remember_me, $phone_number, $country_code );
+			$this->start_2FA( $user, $redirect_to, $remember_me );
 		}
 
 		return $user;
 	}
 
-	private function start_2FA( WP_User $user, $redirect_to, $remember_me, $phone_number, $country_code, $errors = array() ) {
+	private function start_2FA( WP_User $user, $redirect_to, $remember_me, $errors = array() ) {
 		$phone_number = get_user_meta( $user->ID, 'n2fa_phone_number', true );
 		$country_code = get_user_meta( $user->ID, 'n2fa_country_code', true );
 
