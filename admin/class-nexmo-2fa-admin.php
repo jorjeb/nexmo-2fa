@@ -16,7 +16,7 @@ final class Nexmo_2FA_Admin extends Nexmo_2FA {
 		add_action( 'personal_options_update', array( $this, 'user_update' ) );
 		add_action( 'edit_user_profile_update', array( $this, 'user_update' ) );
 
-		add_filter( "plugin_action_links_{$this->plugin_name}/{$this->plugin_name}.php", array( $this, 'plugin_action_links' ) );
+		add_filter( "plugin_action_links", array( $this, 'plugin_action_links' ), 10, 2 );
 	}
 
 	public function admin_init() {
@@ -28,10 +28,14 @@ final class Nexmo_2FA_Admin extends Nexmo_2FA {
 		add_options_page( 'Nexmo 2FA', 'Nexmo 2FA', 'manage_options', "{$this->plugin_name}-settings", array( $this, 'settings_page' ) );
 	}
 
-	public function plugin_action_links( $links ) {
-		$action_links = array(
-			'settings' => '<a href="' . admin_url( "options-general.php?page={$this->plugin_name}-settings" ) . '" title="' . esc_attr__( 'Nexmo 2FA Settings', 'n2fa' ) . '">' . __( 'Settings', 'n2fa' ) . '</a>',
-		);
+	public function plugin_action_links( $links, $plugin_file ) {
+		$action_links = array();
+
+		if ( strpos( $plugin_file, 'nexmo-2fa' ) !== false ) {
+			$action_links = array(
+				'settings' => '<a href="' . admin_url( "options-general.php?page={$this->plugin_name}-settings" ) . '" title="' . esc_attr__( 'Nexmo 2FA Settings', 'n2fa' ) . '">' . __( 'Settings', 'n2fa' ) . '</a>'
+			);
+		}
 
 		return array_merge( $action_links, $links );
 	}
