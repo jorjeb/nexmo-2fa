@@ -95,7 +95,7 @@ final class Nexmo_2FA_Admin extends Nexmo_2FA {
 		$phone_number = get_user_meta( $user->ID, 'n2fa_phone_number', true );
 		$country_code = get_user_meta( $user->ID, 'n2fa_country_code', true );
 
-		if ( $pagenow !== 'profile.php' && ( ! $phone_number || ! $country_code ) ) {
+		if ( $pagenow !== 'profile.php' && ( ! $phone_number || ! $country_code ) && $this->is_enabled() ) {
 			?>
 			<div class="enable-2fa notice"><p><?php printf( __( 'Two factor authentication (2FA) adds an extra layer of security to your account. Enable it by <a href="%1$s">adding your phone number</a>.', 'n2fa' ), get_edit_user_link( $user->ID ) . '#n2fa-phone-number' ) ?></p></div>
 			<?php
