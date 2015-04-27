@@ -20,7 +20,7 @@ final class Nexmo_2FA_API {
 					'api_secret' => $this->secret,
 					'number' => $phone_number,
 					'country' => strtoupper( $country_code ),
-					'brand' => get_bloginfo( 'name' )
+					'brand' => urlencode( get_bloginfo( 'name' ) )
 				),
 				NEXMO_VERIFY_ENDPOINT
 			)
