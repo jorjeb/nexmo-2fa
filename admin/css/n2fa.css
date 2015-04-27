@@ -1,0 +1,24 @@
+.enable-2fa {
+	border-color: #0073AA;
+}
+
+.n2fa-verified,
+.n2fa-verify-success,
+.n2fa-verify-fail {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	color: #FFF;
+	padding: 3px 7px;
+}
+
+.n2fa-verified,
+.n2fa-verify-success {
+	background-color: #2ECC71;
+}
+
+.n2fa-verify-fail {
+	background-color: #E74C3C;
+}

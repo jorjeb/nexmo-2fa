@@ -1,0 +1,26 @@
+{
+	"bitwise": true,
+	"browser": true,
+	"curly": true,
+	"devel": true,
+	"eqeqeq": true,
+	"esnext": true,
+	"forin": true,
+	"immed": true,
+	"latedef": true,
+	"loopfunc": true,
+	"newcap": true,
+	"noarg": true,
+	"noempty": true,
+	"nonew": false,
+	"globals": {
+		"angular": true,
+		"cordova": true,
+		"StatusBar": true
+	},
+	"quotmark": "single",
+	"undef": true,
+	"unused": true,
+	"singleGroups": false,
+	"strict": true
+}

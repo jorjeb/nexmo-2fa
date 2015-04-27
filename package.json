@@ -1,0 +1,33 @@
+{
+  "name": "nexmo-2fa",
+  "version": "0.0.1",
+  "description": "Nexmo Two-Factor Authentication plugin for WordPress",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorjeb/nexmo-2fa.git"
+  },
+  "keywords": [
+    "nexmo",
+    "wordpress",
+    "2fa",
+    "two-factor",
+    "authentication",
+    "plugin"
+  ],
+  "author": "Jorje Barrera",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/jorjeb/nexmo-2fa/issues"
+  },
+  "homepage": "https://github.com/jorjeb/nexmo-2fa",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-csslint": "^0.1.5",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jscs-stylish": "^1.1.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1"
+  }
+}

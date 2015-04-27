@@ -1,0 +1,81 @@
+	{
+	"disallowEmptyBlocks": true,
+	"disallowKeywords": [
+		"eval"
+	],
+	"disallowKeywordsOnNewLine": [
+		"else"
+	],
+	"requireSpaceBeforeBinaryOperators": [
+		"+",
+		"-",
+		"/",
+		"*",
+		"=",
+		"==",
+		"===",
+		"!=",
+		"!=="
+	],
+	"requireSpaceAfterBinaryOperators": [
+		"+",
+		"-",
+		"/",
+		"*",
+		"=",
+		"==",
+		"===",
+		"!=",
+		"!=="
+	],
+	"disallowMixedSpacesAndTabs": true,
+	"disallowMultipleLineBreaks": true,
+	"disallowMultipleLineStrings": true,
+	"disallowMultipleVarDecl": true,
+	"disallowSpaceAfterObjectKeys": true,
+	"disallowSpacesInsideArrayBrackets": true,
+	"disallowSpacesInsideObjectBrackets": true,
+	"disallowTrailingComma": true,
+	"disallowTrailingWhitespace": true,
+	"esnext": true,
+	"requireCapitalizedConstructors": true,
+	"requireCommaBeforeLineBreak": true,
+	"requireCurlyBraces": true,
+	"requireDotNotation": true,
+	"requireLineFeedAtFileEnd": true,
+	"validateIndentation": "\t",
+	"validateLineBreaks": "LF",
+	"validateQuoteMarks": "'",
+	"requireSpaceBeforeObjectValues": true,
+	"disallowNewlineBeforeBlockStatements": true,
+	"disallowSpacesInCallExpression": true,
+	"requireCurlyBraces": [
+		"if",
+		"else",
+		"for",
+		"while",
+		"do",
+		"try",
+		"catch"
+	],
+	"requireSpaceBeforeBlockStatements": true,
+	"validateParameterSeparator": ", ",
+	"requireSpaceBeforeKeywords": [
+		"else",
+		"while",
+		"catch"
+	],
+	"requireSpaceAfterKeywords": [
+		"do",
+		"for",
+		"if",
+		"else",
+		"switch",
+		"case",
+		"try",
+		"while",
+		"with",
+		"return"
+	],
+	"requireSpaceBetweenArguments": true
+}
