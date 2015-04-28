@@ -18,7 +18,7 @@ final class Nexmo_2FA_API {
 				array(
 					'api_key' => $this->key,
 					'api_secret' => $this->secret,
-					'number' => $phone_number,
+					'number' => urlencode( $phone_number ),
 					'country' => strtoupper( $country_code ),
 					'brand' => urlencode( get_bloginfo( 'name' ) )
 				),
