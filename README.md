@@ -11,5 +11,5 @@ Two-Factor Authentication(2FA) provides an additional layer of security for webs
  4. Go to **Settings** > **Nexmo 2FA** and add your Nexmo api **key** and **secret**.
 
 ## How to enable Two-Factor Authentication for your account ##
- 1. Go to **Users** > **Your Profile** and scroll way down to the bottom of the page. Select your country and add your phone number. Make sure your phone number works by clicking on the **Test** button.
+ 1. Go to **Users** > **Your Profile** (go to **Profile** for non admin users) and scroll way down to the bottom of the page. Select your country and add your phone number. Make sure your phone number works by clicking on the **Test** button.
  2. The next time you login you will be prompted with the PIN code sent to your phone.
