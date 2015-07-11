@@ -1,6 +1,6 @@
 {
   "name": "nexmo-2fa",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Nexmo Two-Factor Authentication plugin for WordPress",
   "main": "gulpfile.js",
   "repository": {
@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/jorjeb/nexmo-2fa",
   "devDependencies": {
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
     "gulp-csslint": "^0.1.5",
     "gulp-jscs": "^1.6.0",
     "gulp-jscs-stylish": "^1.1.0",
